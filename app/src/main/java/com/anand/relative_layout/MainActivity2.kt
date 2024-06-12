@@ -9,7 +9,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class MainActivity2 : AppCompatActivity() {
-    var num: EditText? =null
+    var num: EditText? = null
     var btadd: Button? = null
     var btsub: Button? =null
     var btmul: Button? =null
@@ -33,24 +33,25 @@ class MainActivity2 : AppCompatActivity() {
             var num1= num?.text.toString().toInt()
             val num2= 2
             var result= num1+num2
-            num?.text=result.toString()
+            num?.setText(result.toString())
 
         }
         btsub?.setOnClickListener {
             val num2=2
             var result = num?.text.toString().toInt().minus(num2)
-            num.text=result.toString()
+            num?.setText(result.toString())
 
         }
         btmul?.setOnClickListener {
             val num2=2
             var result = num?.text.toString().toInt().times(num2)
-            num.text=result.toString()
+            num?.setText(result.toString())
         }
         btdiv?.setOnClickListener {
             val num2=2
             var result=num?.text.toString().toInt().div(num2)
-            num.text=result.toString()
+            num?.setText(result.toString())
+
         }
 
 

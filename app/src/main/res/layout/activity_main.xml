@@ -76,7 +76,7 @@
         android:background="#0294EC"
         android:textColor="@color/white"
         android:layout_centerInParent="true"
-        android:textSize="20sp"/>
+        android:textSize="30sp"/>
     <TextView
         android:id="@+id/team"
         android:layout_width="wrap_content"
@@ -88,16 +88,17 @@
         android:layout_marginTop="100dp"
         android:background="#C62828"
         android:layout_below="@+id/pbk"/>
+
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tap to continue"
-        android:textSize="30sp"
-        android:textColor="@color/white"
+        android:layout_below="@+id/pbk"
         android:layout_marginStart="50dp"
         android:layout_marginTop="150dp"
         android:background="#050505"
-        android:layout_below="@+id/pbk"/>
+        android:text="Tap to continue"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
 
 </RelativeLayout>
